@@ -1,0 +1,151 @@
+* {
+    /* font-family: Adobe Hebrew; */
+    outline: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    border: 4px black solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-weight: 900;
+}
+
+.theme-toogle {
+    text-align: right;
+}
+
+.theme-toogle-btn {
+    min-width: 30px;
+    min-height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-image: url('./assets/Dark.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.tasks {
+    margin: 20px 0px;
+}
+
+.tasks ul {
+    padding: 0px;
+}
+
+.task-item {
+    list-style-type: none;
+    border: 1px rgba(0, 0, 0, 0.555) solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.task-check-btn {
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+    border: 2px black solid;
+    color: black;
+}
+
+.task-bio {
+    font-size: 18px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 10px;
+    min-width: 100%;
+    background-color: black;
+    left: 0px;
+    border: 5px black solid;
+}
+
+footer form {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#new-task-input {
+    min-width: 250px;
+    margin-right: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px rgba(255, 255, 255, 0.267) solid;
+}
+
+#new-task-input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+#new-task-input-btn {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    background-image: url('./assets/new.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width : 600px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+        align-items: flex-start;
+        height: 100vh;
+
+    }
+
+    .theme-toogle {
+        margin-top: 30px;
+
+    }
+
+    .container {
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        height: 93vh;
+        padding: 0px 20px;
+    }
+
+    #new-task-input {
+        margin-right: 20px;
+    }
+}
