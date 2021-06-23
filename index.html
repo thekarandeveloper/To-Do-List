@@ -7,32 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO :: By karan Kumar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div class="theme-toogle">
-                <button class="theme-toogle-btn"></button>
+            <div class="theme_toogle">
+                <button class="theme_toogle_btn"></button>
             </div>
             <span class="heading">My Day</span>
         </header>
         <section class="tasks">
-            <ul>
-                <li class="task-item">
-                    <input type="checkbox" name="task-check-btn" class="task-check-btn">
-                    <span class="task-bio">Buy Milk</span>
+            <ul class="tasksList">
+                <li class="task_item">
+                    <input type="checkbox" class="task_check_btn">
+                    <span class="task_bio">Buy Milk</span>
                 </li>
-                <li class="task-item">
-                    <input type="checkbox" name="task-check-btn" class="task-check-btn">
-                    <span class="task-bio">Buy stationary</span>
+                <li class="task_item">
+                    <input type="checkbox" name="task_check_btn" class="task_check_btn">
+                    <span class="task_bio">Buy stationary</span>
                 </li>
             </ul>
         </section>
         <footer>
-            <form>
-            <input type="text" name="new-task-input" id="new-task-input" placeholder="Create New Task">
-            <button id="new-task-input-btn"></button>
+            <form id="new_task_form">
+                <input type="text" name="new_task_input" id="new_task_input" placeholder="Create New Task">
+                <button id="new_task_input_btn" type="submit"></button>
             </form>
         </footer>
     </div>

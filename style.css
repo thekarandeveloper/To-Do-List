@@ -1,5 +1,5 @@
 * {
-    /* font-family: Adobe Hebrew; */
+    font-family: "Times New Roman";
     outline: none;
 }
 
@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
 }
 
 .container {
@@ -32,17 +33,17 @@ header {
     font-weight: 900;
 }
 
-.theme-toogle {
+.theme_toogle {
     text-align: right;
 }
 
-.theme-toogle-btn {
+.theme_toogle_btn {
     min-width: 30px;
     min-height: 30px;
     background-color: transparent;
     border: none;
     outline: none;
-    background-image: url('./assets/Dark.svg');
+    background-image: url('assets/Dark.svg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -59,7 +60,7 @@ header {
     padding: 0px;
 }
 
-.task-item {
+.task_item {
     list-style-type: none;
     border: 1px rgba(0, 0, 0, 0.555) solid;
     padding: 10px;
@@ -70,7 +71,7 @@ header {
     margin-bottom: 20px;
 }
 
-.task-check-btn {
+.task_check_btn {
     width: 18px;
     height: 18px;
     margin-right: 20px;
@@ -78,7 +79,7 @@ header {
     color: black;
 }
 
-.task-bio {
+.task_bio {
     font-size: 18px;
 }
 
@@ -98,7 +99,7 @@ footer form {
     align-content: center;
 }
 
-#new-task-input {
+#new_task_input {
     min-width: 250px;
     margin-right: 40px;
     font-size: 20px;
@@ -108,12 +109,13 @@ footer form {
     border-bottom: 1px rgba(255, 255, 255, 0.267) solid;
 }
 
-#new-task-input::placeholder {
-    color: white;
+#new_task_input::placeholder {
+    color: rgba(255, 255, 255, 0.589);
     font-size: 20px;
+    font-family: "Times New Roman";
 }
 
-#new-task-input-btn {
+#new_task_input_btn {
     width: 30px;
     height: 30px;
     background-color: transparent;
@@ -124,15 +126,17 @@ footer form {
 }
 
 @media screen and (max-width : 600px) {
+
     body {
         margin: 0px;
         padding: 0px;
         align-items: flex-start;
         height: 100vh;
+        background-color:rgb(255, 255, 255);
 
     }
 
-    .theme-toogle {
+    .theme_toogle {
         margin-top: 30px;
 
     }
@@ -145,7 +149,7 @@ footer form {
         padding: 0px 20px;
     }
 
-    #new-task-input {
+    #new_task_input {
         margin-right: 20px;
     }
 }
