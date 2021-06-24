@@ -19,9 +19,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 300px;
-    min-height: 80vh;
+    height: 80vh;
     border-radius: 20px;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 header {
@@ -54,8 +54,22 @@ header {
 
 .tasks {
     margin: 20px 0px;
+    overflow:scroll;
+    padding-right: 15px;
 }
 
+::-webkit-scrollbar{
+    width: 8px;
+
+}
+::-webkit-scrollbar-track{
+    background-color:rgba(209, 209, 209, 0);
+    border-radius:30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgba(129, 129, 129, 0.075);
+    border-radius:30px;
+}
 .tasks ul {
     padding: 0px;
 }
@@ -123,6 +137,9 @@ footer form {
     background-image: url('./assets/new.svg');
     background-repeat: no-repeat;
     background-size: contain;
+}
+.taskCompleted{
+    visibility: hidden;
 }
 
 @media screen and (max-width : 600px) {
