@@ -70,8 +70,15 @@ header {
     background-color:rgba(129, 129, 129, 0.075);
     border-radius:30px;
 }
-.tasks ul {
+#tasksList{
     padding: 0px;
+}
+.task_list_empty{
+    background-image:url('./assets/No-tasks.svg');
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .task_item {
@@ -95,6 +102,12 @@ header {
 
 .task_bio {
     font-size: 18px;
+}
+
+
+.task_check_btn:checked + .task_bio{
+    text-decoration:line-through;
+    color: rgb(109, 109, 109);
 }
 
 footer {
