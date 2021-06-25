@@ -1,9 +1,11 @@
 // Variables
+var root = document.querySelector(':root')
+var container = document.querySelector('.container');
 var newTaskInput = document.getElementById('new_task_input')
 var taskform = document.getElementById('new_task_form');
 var tasksList = document.getElementById('tasksList');
 var taskBtns = document.querySelectorAll('.task_check_btn');
-var container = document.querySelector('.container');
+var themeBtn = document.querySelector('.theme_toogle_btn');
 // Do this when we submit the form
 taskform.addEventListener('submit', function (e) {
 
@@ -78,3 +80,33 @@ function onTaskComplete(btns) {
 
 
 }
+
+
+// Dark mode
+
+themeBtn.addEventListener('click', function () {
+
+
+    var darkTheme = themeBtn.classList.toggle('dark')
+    
+    if (darkTheme) {
+
+        root.style.setProperty('transition', '1s')
+        root.style.setProperty('--primary-color', '#1E1E1E')
+        root.style.setProperty('--secondary-color', '#3B3B3B')
+        root.style.setProperty('--text-color', '#EAEAEA')
+        root.style.setProperty('--task-color', '#3B3B3B')
+        root.style.setProperty('--footer-color', '#1E1E1E')
+        root.style.setProperty('--theme-btn', `url('assets/Light-theme-btn.svg')`)
+        root.style.setProperty('--container-bg', `url('./assets/Dark-empty.svg')`)
+    } else {
+        root.style.setProperty('transition', '1s')
+        root.style.setProperty('--primary-color', 'white')
+        root.style.setProperty('--secondary-color', '#1E1E1E')
+        root.style.setProperty('--text-color', 'black')
+        root.style.setProperty('--task-color', 'white')
+        root.style.setProperty('--footer-color', '#1E1E1E')
+        root.style.setProperty('--theme-btn', `url('assets/Dark-theme-btn.svg')`)
+        root.style.setProperty('--container-bg', `url('./assets/Light-empty.svg')`)
+    }
+})

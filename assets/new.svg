@@ -1,3 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-  <path id="Icon_ionic-ios-add-circle" data-name="Icon ionic-ios-add-circle" d="M22.375,3.375a19,19,0,1,0,19,19A19,19,0,0,0,22.375,3.375Zm8.267,20.462H23.837v6.805a1.462,1.462,0,0,1-2.923,0V23.837H14.108a1.462,1.462,0,0,1,0-2.923h6.805V14.108a1.462,1.462,0,0,1,2.923,0v6.805h6.805a1.462,1.462,0,1,1,0,2.923Z" transform="translate(-2.875 -2.875)" fill="#fff" stroke="#000" stroke-width="1"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g id="Icon_ionic-ios-add-circle" transform="matrix(1,0,0,1,-2.875,-2.875)">
+        <path d="M22.375,3.375C11.952,3.375 3.375,11.952 3.375,22.375C3.375,32.798 11.952,41.375 22.375,41.375C32.798,41.375 41.375,32.798 41.375,22.375C41.375,11.952 32.798,3.375 22.375,3.375ZM30.642,23.837L23.837,23.837L23.837,30.642C23.816,31.429 23.163,32.066 22.376,32.066C21.588,32.066 20.935,31.429 20.914,30.642L20.914,23.837L14.108,23.837C13.321,23.816 12.684,23.163 12.684,22.376C12.684,21.588 13.321,20.935 14.108,20.914L20.913,20.914L20.913,14.108C20.934,13.321 21.587,12.684 22.374,12.684C23.162,12.684 23.815,13.321 23.836,14.108L23.836,20.913L30.641,20.913C30.654,20.913 30.666,20.912 30.679,20.912C31.481,20.912 32.141,21.572 32.141,22.374C32.141,23.177 31.481,23.836 30.679,23.836C30.666,23.836 30.654,23.836 30.641,23.836L30.642,23.837Z" style="fill:white;fill-rule:nonzero;stroke:white;stroke-width:1px;"/>
+    </g>
 </svg>
