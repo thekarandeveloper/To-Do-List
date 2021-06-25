@@ -64,7 +64,7 @@ function onTaskComplete(btns) {
 
             // Removing Parent Element of checkobx which is Li in 0.5 s
             parent.remove();
-        }, 500);
+        }, 300);
 
 
         if (tasksList.childNodes.length == 2) {
@@ -73,7 +73,7 @@ function onTaskComplete(btns) {
             setTimeout(() => {
                 container.classList.add('task_list_empty')
 
-            }, 500);
+            }, 300);
         }
 
     })
@@ -88,7 +88,7 @@ themeBtn.addEventListener('click', function () {
 
 
     var darkTheme = themeBtn.classList.toggle('dark')
-    
+
     if (darkTheme) {
 
         root.style.setProperty('transition', '1s')
