@@ -70,7 +70,7 @@ function onTaskComplete(btns) {
             setTimeout(() => {
                 container.classList.add('task_list_empty')
 
-            }, 300);
+            }, 800);
         }
 
     })
@@ -88,7 +88,7 @@ themeBtn.addEventListener('click', function () {
 
     if (darkTheme) {
 
-        root.style.setProperty('transition', '1s')
+        root.style.setProperty('--theme-transition', '1s')
         root.style.setProperty('--primary-color', '#1E1E1E')
         root.style.setProperty('--secondary-color', '#3B3B3B')
         root.style.setProperty('--text-color', '#EAEAEA')

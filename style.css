@@ -8,6 +8,7 @@
     --container-bg: url('./assets/Light-empty.svg');
     --complete-icon: url('assets/complete.svg');
     --filter: none;
+    --theme-transition:0s;
 
 }
 
@@ -36,6 +37,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     background: var(--primary-color);
+    transition: var(--theme-transition);
 }
 
 header {
@@ -51,6 +53,7 @@ header {
 .theme_toogle {
     text-align: right;
     margin-right: -15px;
+
 }
 
 .theme_toogle_btn {
@@ -64,6 +67,7 @@ header {
     background-size: 80%;
     background-position: center;
     padding: 20px;
+    cursor: pointer;
 }
 
 .theme_toogle_btn:hover {
@@ -102,10 +106,12 @@ header {
 }
 
 .task_list_empty {
-    background-image: var(--container-bg);
-    background-size: 50%;
+    transition: 0s;
     background-position: center;
+    background-size: 50%;
     background-repeat: no-repeat;
+
+    background-image: var(--container-bg);
 
 }
 
