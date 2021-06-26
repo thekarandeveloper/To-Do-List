@@ -1,13 +1,16 @@
 :root {
-    --primary-color:white;
+    --primary-color: white;
     --secondary-color: #1E1E1E;
-    --text-color:black;
-    --task-color:white;
-    --footer-color:#1E1E1E;
-    --theme-btn:url('assets/Dark-theme-btn.svg');
+    --text-color: black;
+    --task-color: white;
+    --footer-color: #1E1E1E;
+    --theme-btn: url('assets/Dark-theme-btn.svg');
     --container-bg: url('./assets/Light-empty.svg');
+    --complete-icon: url('assets/complete.svg');
+    --filter: none;
 
 }
+
 * {
     font-family: "Times New Roman";
     outline: none;
@@ -32,7 +35,7 @@ body {
     height: 80vh;
     border-radius: 20px;
     overflow: hidden;
-    background:var(--primary-color) ;
+    background: var(--primary-color);
 }
 
 header {
@@ -42,12 +45,12 @@ header {
 
 .heading {
     font-weight: 900;
-    color:var(--text-color) ;
+    color: var(--text-color);
 }
 
 .theme_toogle {
     text-align: right;
-    margin-right:-15px;
+    margin-right: -15px;
 }
 
 .theme_toogle_btn {
@@ -76,7 +79,7 @@ header {
 .tasks {
     margin: 20px 0px;
     overflow: hidden;
-    padding-right: 15p   ;
+    padding-right: 15p;
 }
 
 ::-webkit-scrollbar {
@@ -115,16 +118,29 @@ header {
     align-items: center;
     border-radius: 7px;
     margin-bottom: 20px;
-    background-color:var(--task-color);
-    color: var(--text-color) ;
+    background-color: var(--task-color);
+    color: var(--text-color);
 }
 
 .task_check_btn {
-    width: 18px;
-    height: 18px;
-    margin-right: 20px;
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
+    padding: 3px;
     border: 2px var(--secondary-color) solid;
     /* color: var(--primary-color); */
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    border: 2px grey solid;
+    cursor: pointer;
+}
+
+.task_check_btn:hover {
+    background-image: url('assets/complete.svg');
+    /* opacity: 0.5; */
+    filter: var(--filter);
+
 }
 
 .task_bio {
@@ -132,9 +148,14 @@ header {
 }
 
 
-.task_check_btn:checked+ .task_bio {
+.task_check_btn:hover+.task_bio {
     text-decoration: line-through;
-    color: rgb(109, 109, 109);
+    color: rgb(150, 150, 150);
+}
+
+.task-completed {
+    transition: 2s;
+    transform: translateX(500px);
 }
 
 footer {
@@ -146,7 +167,7 @@ footer {
     left: 0px;
     border: 5px var(--footer-color) solid;
 }
- 
+
 footer form {
     display: flex;
     flex-direction: row;
@@ -177,6 +198,7 @@ footer form {
     background-image: url('./assets/new.svg');
     background-repeat: no-repeat;
     background-size: 80%;
+    cursor: pointer;
 }
 
 .taskCompleted {

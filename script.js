@@ -31,8 +31,7 @@ function addTask(newTask) {
 
     // Create checkbox  element and set its type and  class 
 
-    const newCheckBtn = document.createElement('input');
-    newCheckBtn.setAttribute('type', 'checkbox')
+    const newCheckBtn = document.createElement('div');
     newCheckBtn.setAttribute('class', 'task_check_btn')
 
     // Create span  element and set its class and add new task input
@@ -58,18 +57,16 @@ function addTask(newTask) {
 function onTaskComplete(btns) {
 
     btns.addEventListener('click', function (e) {
+        var parent = e.toElement.parentElement;
+        parent.classList.add('task-completed'); // To slide out the task to the right
+        // Now we delete that tast which we have slided out
         setTimeout(() => {
-
-            var parent = e.toElement.parentElement;
-
             // Removing Parent Element of checkobx which is Li in 0.5 s
             parent.remove();
-        }, 300);
+        }, 800);
 
 
         if (tasksList.childNodes.length == 2) {
-
-
             setTimeout(() => {
                 container.classList.add('task_list_empty')
 
@@ -99,6 +96,8 @@ themeBtn.addEventListener('click', function () {
         root.style.setProperty('--footer-color', '#1E1E1E')
         root.style.setProperty('--theme-btn', `url('assets/Light-theme-btn.svg')`)
         root.style.setProperty('--container-bg', `url('./assets/Dark-empty.svg')`)
+        root.style.setProperty('--filter', 'invert()')
+
     } else {
         root.style.setProperty('transition', '1s')
         root.style.setProperty('--primary-color', 'white')

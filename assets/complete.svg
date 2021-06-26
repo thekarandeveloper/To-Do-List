@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 27 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Icon_awesome-check-circle" transform="matrix(1,0,0,1,-0.563,-0.563)">
+        <path d="M27.22,13.462C27.101,20.656 21.085,26.478 13.891,26.362C6.698,26.478 0.682,20.655 0.563,13.462C0.683,6.269 6.698,0.447 13.891,0.563C21.084,0.447 27.1,6.269 27.22,13.462ZM12.35,20.292L22.239,10.722C22.4,10.569 22.491,10.356 22.491,10.134C22.491,9.911 22.4,9.698 22.239,9.545L21.023,8.368C20.685,8.045 20.145,8.045 19.807,8.368L11.742,16.168L7.976,12.529C7.638,12.206 7.098,12.206 6.76,12.529L5.544,13.705C5.383,13.858 5.292,14.071 5.292,14.294C5.292,14.516 5.383,14.729 5.544,14.882L11.134,20.291C11.472,20.614 12.012,20.614 12.35,20.291L12.35,20.292Z" style="fill:rgb(30,30,30);fill-rule:nonzero;"/>
+    </g>
+</svg>
