@@ -146,7 +146,7 @@ footer {
     left: 0px;
     border: 5px var(--footer-color) solid;
 }
-
+ 
 footer form {
     display: flex;
     flex-direction: row;

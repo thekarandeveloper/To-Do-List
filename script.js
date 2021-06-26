@@ -29,7 +29,7 @@ function addTask(newTask) {
     const newTaskItem = document.createElement('li');
     newTaskItem.setAttribute('class', 'task_item');
 
-    // Create checkbox  element and set its type and  class
+    // Create checkbox  element and set its type and  class 
 
     const newCheckBtn = document.createElement('input');
     newCheckBtn.setAttribute('type', 'checkbox')
