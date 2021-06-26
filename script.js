@@ -63,7 +63,7 @@ function onTaskComplete(btns) {
         setTimeout(() => {
             // Removing Parent Element of checkobx which is Li in 0.5 s
             parent.remove();
-        }, 800);
+        }, 500);
 
 
         if (tasksList.childNodes.length == 2) {

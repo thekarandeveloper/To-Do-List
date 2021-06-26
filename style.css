@@ -8,7 +8,7 @@
     --container-bg: url('./assets/Light-empty.svg');
     --complete-icon: url('assets/complete.svg');
     --filter: none;
-    --theme-transition:0s;
+    --theme-transition: 0s;
 
 }
 
@@ -110,7 +110,6 @@ header {
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
-
     background-image: var(--container-bg);
 
 }
@@ -126,6 +125,13 @@ header {
     margin-bottom: 20px;
     background-color: var(--task-color);
     color: var(--text-color);
+}
+
+.task_item:hover {
+    transition: 0.5s;
+    border: 1px rgba(148, 148, 148, 0.63) solid;
+    cursor: pointer;
+
 }
 
 .task_check_btn {
@@ -153,15 +159,17 @@ header {
     font-size: 18px;
 }
 
-
+/*  
 .task_check_btn:hover+.task_bio {
-    text-decoration: line-through;
-    color: rgb(150, 150, 150);
-}
+} */
 
 .task-completed {
-    transition: 2s;
-    transform: translateX(500px);
+    transition: 0.5s;
+    transform: scale(90%);
+    text-decoration: line-through;
+    color: rgb(150, 150, 150);
+    opacity: 0;
+
 }
 
 footer {
