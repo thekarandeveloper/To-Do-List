@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TODO :: By karan Kumar</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO :: By karan Kumar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-
-<body>
-    <div class="container task_list_empty">
-        <header>
-            <div class="theme_toogle">
-                <button class="theme_toogle_btn"></button>
-            </div>
-            <span class="heading">My Day</span>
-        </header>
-        <section class="tasks">
-            <ul id="tasksList">
-            </ul>
-        </section>
-        <footer>
-            <form id="new_task_form">
-                <input type="text" name="new_task_input" id="new_task_input" placeholder="Create New Task" value="">
-                <button id="new_task_input_btn" type="submit"></button>
-            </form>
-        </footer>
-    </div>
-</body>
-
+    <body>
+        <div class="container task_list_empty">
+            <header>
+                <div class="theme_toogle">
+                    <button class="theme_toogle_btn"></button>
+                </div>
+                <span class="heading">My Day</span>
+            </header>
+            <section class="tasks">
+                <ul id="tasksList"></ul>
+            </section>
+            <footer>
+                <form id="new_task_form">
+                    <input
+                        type="text"
+                        name="new_task_input"
+                        id="new_task_input"
+                        placeholder="Create New Task"
+                        value=""
+                    />
+                    <button id="new_task_input_btn" type="submit"></button>
+                </form>
+            </footer>
+        </div>
+    </body>
 </html>
