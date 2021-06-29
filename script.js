@@ -66,7 +66,7 @@ function onTaskComplete(btns) {
         }, 400);
 
 
-        if (tasksList.childNodes.length == 2) {
+        if (tasksList.childNodes.length == 1) {
             setTimeout(() => {
                 container.classList.add('task_list_empty')
 
