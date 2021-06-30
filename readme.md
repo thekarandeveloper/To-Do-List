@@ -7,7 +7,7 @@ It's a simple To-do app. As a beginner, creating these features like DOM manipul
 #####Prerequisite Knowledge
 Basics of HTML, CSS and JS (specially DOM Manipulations)
 
-#####What've Learned
+#####What I've Learned
 
 + DOM Manipulation
 + Classlist 
