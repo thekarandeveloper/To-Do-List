@@ -1,15 +1,14 @@
 :root {
     --primary-color: white;
-    --secondary-color: #1E1E1E;
+    --secondary-color: #1e1e1e;
     --text-color: black;
     --task-color: white;
-    --footer-color: #1E1E1E;
-    --theme-btn: url('assets/Dark-theme-btn.svg');
-    --container-bg: url('./assets/Light-empty.svg');
-    --complete-icon: url('assets/complete.svg');
+    --footer-color: #1e1e1e;
+    --theme-btn: url("assets/Dark-theme-btn.svg");
+    --container-bg: url("./assets/Light-empty.svg");
+    --complete-icon: url("assets/complete.svg");
     --filter: none;
     --theme-transition: 0s;
-
 }
 
 * {
@@ -23,7 +22,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
 }
 
 .container {
@@ -53,7 +51,6 @@ header {
 .theme_toogle {
     text-align: right;
     margin-right: -15px;
-
 }
 
 .theme_toogle_btn {
@@ -86,7 +83,6 @@ header {
     padding-right: 15p;
 }
 
-
 #tasksList {
     padding: 0px;
 }
@@ -97,7 +93,6 @@ header {
     background-size: 50%;
     background-repeat: no-repeat;
     background-image: var(--container-bg);
-
 }
 
 .task_item {
@@ -117,8 +112,7 @@ header {
     transition: 0.5s;
     /* border: 1px rgba(148, 148, 148, 0.63) solid; */
     cursor: pointer;
-    background-color:rgba(226, 226, 226, 0.192);
-
+    background-color: rgba(226, 226, 226, 0.192);
 }
 
 .task_check_btn {
@@ -136,17 +130,14 @@ header {
 }
 
 .task_check_btn:hover {
-    background-image: url('assets/complete.svg');
+    background-image: url("assets/complete.svg");
     /* opacity: 0.5; */
     filter: var(--filter);
-
 }
 
 .task_bio {
     font-size: 18px;
 }
-
-
 
 .task-completed {
     transition: 0.5s;
@@ -154,7 +145,6 @@ header {
     text-decoration: line-through;
     color: rgb(150, 150, 150);
     opacity: 0;
-
 }
 
 footer {
@@ -194,7 +184,7 @@ footer form {
     height: 30px;
     background-color: transparent;
     border: none;
-    background-image: url('./assets/new.svg');
+    background-image: url("./assets/new.svg");
     background-repeat: no-repeat;
     background-size: 80%;
     cursor: pointer;
@@ -204,20 +194,17 @@ footer form {
     visibility: hidden;
 }
 
-@media screen and (max-width : 600px) {
-
+@media screen and (max-width: 600px) {
     body {
         margin: 0px;
         padding: 0px;
         align-items: flex-start;
         height: 100vh;
         background-color: var(--bg-color);
-
     }
 
     .theme_toogle {
         margin-top: 30px;
-
     }
 
     .container {
