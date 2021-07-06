@@ -5,7 +5,7 @@ It's a simple To-do app. As a beginner, creating these features like DOM manipul
 
 
 <p align="center">
-      <a href="https://codesandbox.io/s/to-do-list-vshkg" target="_blank">
+      <a href="https://codesandbox.io/s/b7cbj" target="_blank">
           <img src="https://github.com/karan-kmr/assets/blob/master/edit-btn.svg" width="180"  height="auto">
     </a> &ensp;
       <a href="https://karan-kmr.github.io/To-Do-List/" target="_blank">
