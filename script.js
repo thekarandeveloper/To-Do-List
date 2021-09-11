@@ -49,13 +49,13 @@ function addTask(newTask) {
 
 // To remove the completed task
 function onTaskComplete(btns) {
-    btns.addEventListener("click", function (e) {
-        var parent = e.toElement.parentElement;
-        parent.classList.add("task-completed"); // To slide out the task to the right
+    btns.addEventListener("click", function (element) {
+        var parents = element.target.parentElement;
+        parents.classList.add("task-completed"); // To slide out the task to the right
         // Now we delete that tast which we have slided out
         setTimeout(() => {
             // Removing Parent Element of checkobx which is Li in 0.5 s
-            parent.remove();
+            parents.remove();
         }, 400);
 
         if (tasksList.childNodes.length === 1) {
